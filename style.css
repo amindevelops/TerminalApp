@@ -1,0 +1,21 @@
+body {
+  background: black;
+  /* color: white; */
+}
+
+input {
+  background: transparent;
+  border: none;
+  /* color: inherit; */
+  color: white;
+}
+
+/*
+
+1. coding style
+2. concise
+- inheritance is default
+3. specific / targetted 
+- modular
+
+*/
