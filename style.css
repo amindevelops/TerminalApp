@@ -4,7 +4,7 @@ body {
 }
 
 input {
-  background: transparent;
+  /* background: transparent; */
   border: none;
   /* color: inherit; */
   color: white;
@@ -17,5 +17,17 @@ input {
 - inheritance is default
 3. specific / targetted 
 - modular
+
+*/
+
+/*
+
+Browser styles ship with elements
+- "default" style
+- They need to be "reset"
+2 famous ones are:
+
+Eric Meyer's original CSS reset
+Normalize.css
 
 */
