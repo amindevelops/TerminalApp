@@ -1,14 +1,28 @@
+@font-face {
+  font-family: monospace;
+  src: url("monospace.ttf");
+}
+
 body {
   background: black;
-  /* color: white; */
+  color: white;
+  font-family: monospace;
 }
 
 input {
-  /* background: transparent; */
-  border: none;
+  background: transparent;
+  color: yellow;
   /* color: inherit; */
-  color: white;
+  border: none;
+  border-right: 10px solid yellow;
+  font-family: monospace;
 }
+
+/*
+1. use input border for cursor style
+2. make input auto 
+3. can it work multi-line?
+*/
 
 /*
 
@@ -29,5 +43,7 @@ Browser styles ship with elements
 
 Eric Meyer's original CSS reset
 Normalize.css
+
+You can use both together.
 
 */
