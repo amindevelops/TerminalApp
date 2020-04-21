@@ -36,7 +36,22 @@ function commandBuy(flags_values) {
 //Strings and comparisons
 //String operations e.g. explode, split
 //Arrays and access
+// -> Objects
 //FileReader API
+//1. Make a new file or update an existing one? How is it decided?
+//2. Make a command cheat sheet
+//3. Open file "name" -t "style"
+//4. Topic add -s "kjhdkjsadsa"
+//5. List bookmarks -f "filename.md"
+//"agile workflow does not suit all projects, you must understand the key principles of agile to see if they are actually applicable to the project and also the team. [q: what are the principles?]"
+//6. List questions -f "filename.md"
+// [1] lkajkldjsaldas
+// [2] dskjahdkjsadsa
+//7. :q / Esc -> to exit the interactive UI
+//8. a1 -> Enter
+//9. "kjhasdkjsakjdskajkdsada" -> Enter
+//10. Saved!
+//11. Report QA performance
 
 //LocalStorage
 //1. Just in case the code breaks whilst running, you might encounter one of two scenarios:
@@ -47,8 +62,12 @@ function commandBuy(flags_values) {
 //a) Create a queue locally on the user's device, which is then processed.
 //b) 
 
-
-//Stretch
+//Stretch (UX)
 //1. Add a status icon on the app to indicate connectivity strength or presence
 //2. Sync animation or something to indicate to the user when a cloud-sync is taking place between local storage and the server-side
 //3. In that respect, for good UX, you should have an indicator as well to clarify if you are up-to-date with the cloud or there is a local backlog.
+
+//Assignments
+//1. Finish UI styles. 
+//2. Cheatsheet (will eventually be a man/help in the app).
+//3. PlantUML diagram based how commands are processed.
