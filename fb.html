@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <!-- reset -->
+    <!-- normalize -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    
+  </head>
+  <body>
+   
+  
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCKhKZYgcJXAyn35yaPtPy3IKgaymE7w7M",
+      authDomain: "consoleapp-d2690.firebaseapp.com",
+      databaseURL: "https://consoleapp-d2690.firebaseio.com",
+      projectId: "consoleapp-d2690",
+      storageBucket: "consoleapp-d2690.appspot.com",
+      messagingSenderId: "629717627064",
+      appId: "1:629717627064:web:8baa0a989f14a28edf444d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Return a named app
+    // var otherApp = firebase.app("otherApp");
+
+    // Get a reference to the database service
+    //var database = firebase.database();
+
+    function writeUserData(userId, name, email) {
+      firebase.database().ref('users/' + userId).set({
+        username: name,
+        email: email
+      });
+    }
+
+    function writeCommandData(commandId, type, message) {
+      firebase.database().ref('commands/' + commandId).set({
+        type: type,
+        message: message, 
+        note: "This was harcoded"
+      });
+    }
+
+    // writeUserData('ace', 'amin', 'email@email.com');
+    writeCommandData('test', 'time', 'I just finished the code');
+    console.log('this far');
+
+  </script>
+  </body>
+</html>
+
+
+

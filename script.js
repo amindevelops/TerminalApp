@@ -62,6 +62,14 @@ function commandBuy(flags_values) {
 //a) Create a queue locally on the user's device, which is then processed.
 //b) 
 
+//External Storage
+//1. Connect Firebase to your console application.
+//2. Create a usage log of the app, in firebase, such that user activity is tracked:
+//a) When application is started, time and date
+//b) The time at which any command is run
+//c) The command that was run and the top level detail
+//e.g. 'make a note' 'topic'
+
 //Stretch (UX)
 //1. Add a status icon on the app to indicate connectivity strength or presence
 //2. Sync animation or something to indicate to the user when a cloud-sync is taking place between local storage and the server-side
